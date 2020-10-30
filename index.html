@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+   <meta charset="utf-8" />
+   <title>Whiskey Run Designs</title>
+   <link rel="stylesheet" href="styles/styles.css"/>
+   <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+   
 </head>
+
 <body>
-    <p>Hello World!</p>
+   <div>
+      <header>
+         <h1>Whiskey Run Designs</h1>
+         <img src="images/hiking.jpg" width="258" height="147" />
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </nav>
+
+      <article>
+         <h2>Hike Selector</h2>
+         <form>
+            <fieldset>
+               <legend><span>How many miles do you want to hike?</span></legend>
+               <input type="number" id="miles" name="miles" />
+               <label for="miles">miles</label>
+            </fieldset>
+            <fieldset>
+               <legend><span>Where do you want to hike?</span></legend>
+               <input type="radio" id="southernIndiana" name="location" value="southernIndiana" />
+               <label for="southernIndiana">Southern Indiana</label>
+               <input type="radio" id="louisville" name="location" value="louisville" />
+               <label for="louisville">Louisville</label>
+               <input type="radio" id="redRiverGorge" name="location" value="redRiverGorge" />
+               <label for="redRiverGorge">Red River Gorge</label>
+            </fieldset>
+            <fieldset id="myTest">
+               <legend><span>What type of hike do you want?</span></legend>
+               <input type="radio" id="paved" name="hikeType" value="paved" />
+               <label for="paved">Paved</label>
+               <input type="radio" id="partialPaved" name="hikeType" value="partialPaved" />
+               <label for="partialPaved">Partially Paved</label>
+               <input type="radio" id="unpaved" name="hikeType" value="unpaved" />
+               <label for="unpaved">Unpaved</label>
+            </fieldset>
+         </form>
+      </article>
+      
+      <aside>
+         <h3 id="messageType"></h3>
+         <h3 id="messageLocation"></h3>
+         <p id="messageBody"></p>
+      </aside>
+
+      <footer>
+         <p>Whiskey Run Designs &bull; Milltown, IN</p>
+      </footer>
+   </div>
+   <script src="scripts/script.js"></script>
 </body>
 </html>
